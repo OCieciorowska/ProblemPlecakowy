@@ -1,33 +1,17 @@
-﻿using ProblemPlecakowy;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProblemPlecakowy
+namespace AppProblemPlecakowy
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            Console.Write("Wprowadz seed: ");
-            int seed = int.Parse(Console.ReadLine());
-
-            Console.Write("Wprowadz liczbe przedmiotow: ");
-            int n = int.Parse(Console.ReadLine());
-
-            Console.Write("Wprowadz pojemnosc plecaka: ");
-            int capacity = int.Parse(Console.ReadLine());
-
-            Problem problem = new Problem(n, seed);
-            Console.WriteLine(problem);
-
-            Result result = problem.Solve(capacity);
-            Console.WriteLine(result);
-
-
-
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new Form1());
         }
     }
 }
