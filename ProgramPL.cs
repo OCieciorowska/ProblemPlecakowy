@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
    
 namespace ProjektPlecakowy
 {
-    internal class Program
+    internal class ProgramPL
     {
         static void Main(string[] args)
         {
